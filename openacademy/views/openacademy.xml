@@ -16,8 +16,16 @@
                             <page string="Description">
                                 <field name="description"/>
                             </page>
-                            <page string="About">
-                                Observaciones
+                            <page string="Sesiones">
+                                <field name="session_ids">
+                                    <tree string="Sesiones Registradas">
+                                        <field name="name"/>
+                                        <field name="instructor_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Acerca de">
+                                About
                             </page>
                         </notebook>
                     </sheet>
