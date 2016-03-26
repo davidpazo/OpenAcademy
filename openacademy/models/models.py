@@ -3,7 +3,11 @@
 from openerp import models, fields, api
 
 #Añadimos la clase session, que contiene el modelo de las sesiones
-
+ class Course(models.Model):
+      _name = 'openacademy.course'
+  
+      name = fields.Char(string="Titulo", required=True)
+     description = fields.Text() 
 class Session(models.Model):
     _name = 'openacademy.session'
 
