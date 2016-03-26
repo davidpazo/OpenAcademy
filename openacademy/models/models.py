@@ -8,6 +8,8 @@ from openerp import models, fields, api
   
       name = fields.Char(string="Titulo", required=True)
      description = fields.Text() 
+     responsible_id = fields.Many2one('res.users',
+         ondelete='set null', string="Responsable", index=True)
 class Session(models.Model):
     _name = 'openacademy.session'
 
